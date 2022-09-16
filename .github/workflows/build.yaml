@@ -1,15 +1,28 @@
-name: CI 
+name: Build and deploy 
 on: 
   push:
     branches: [main]
+permissions: 
+  contents: write
 jobs:
-  build:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }} # multiple deployments in quick succession.
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
       - uses: actions/checkout@v3
+
+      - name: Install and build
       - uses: actions/setup-node@v3
         with: 
           node-version: '16.x'
-          registry-url: 'https://registry.npmjs.org'
-      - run: npm ci
-      - run: npm run build
+          # registry-url: 'https://registry.npmjs.org'
+      - run: |
+          npm ci
+          npm run build
+      
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+          branch: gh-pages
