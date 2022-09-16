@@ -1,0 +1,24 @@
+export { B as build } from './objectResourceUtils.169cfe3d.js';
+import './quatf64.c1e27511.js';
+import './mat4f64.490cb75d.js';
+import './vec3f32.d9d17da6.js';
+import '../index.js';
+import './VertexAttribute.33243f22.js';
+import './requestImageUtils.4b4c5bd1.js';
+import './devEnvironmentUtils.d5854ef4.js';
+import './BufferView.d21a94a7.js';
+import './vec33.95c8c667.js';
+import './DefaultMaterial_COLOR_GAMMA.dd4092e2.js';
+import './types.96fa0363.js';
+import './enums.f11416db.js';
+import './Version.f6121f9f.js';
+import './quat.2e5b4f8c.js';
+import './vectorStacks.eef70794.js';
+import './lineSegment.82bae0cd.js';
+import './Util.9c62043a.js';
+import './Texture.504bc158.js';
+import './VertexArrayObject.cb91c839.js';
+import './VertexElementDescriptor.e016eb10.js';
+import './InterleavedLayout.c8362e84.js';
+import './sphere.95c66947.js';
+//# sourceMappingURL=RealisticTree.glsl.255191c5.js.map
