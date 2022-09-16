@@ -1,4 +1,4 @@
-# Sample @arcgis/core ES Module TypeScript App
+# Sample JSAPI ES Module TypeScript App
 
 ## Setup
 
