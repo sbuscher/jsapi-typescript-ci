@@ -6,7 +6,8 @@
   "license": "ISC",
   "main": "rollup.config.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c ignore-jekyll",
+    "ignore-jekyll": "touch ./dist/.nojekyll"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
