@@ -1,15 +1,15 @@
-import ArcGISMap from "@arcgis/core/Map";
+import Map from "@arcgis/core/Map";
 import MapView from "@arcgis/core/views/MapView";
 
-const map = new ArcGISMap({
-  basemap: "streets-vector"
+const map = new Map({
+  basemap: "streets-relief-vector"
 });
 
 const view = new MapView({
   map: map,
   container: "viewDiv",
-  center: [-118.244, 34.052],
-  zoom: 12
+  center: [-106.983, 38.869],
+  zoom: 14
 });
 
 view.when(() => {
