@@ -10,7 +10,6 @@ npm i --save-dev @rollup/plugin-commonjs
 npm i --save-dev @rollup/plugin-typescript
 npm i --save-dev rollup-plugin-copy 
 npm i --save-dev tslib
-npm i --savedev httpserver 
 npm i @arcgis/core  
 npm init --yes
 tsc --init
@@ -23,5 +22,5 @@ mkdir src && touch src/index.tx
 ```bash
 npm run build
 cd dist
-httpserver
+npx httpserver
 ```
